@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="dist/hamburgers.css" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="main h-screen relative w-full bg-[#ECECEC] flex flex-col items-center"
+    >
+      <div
+        class="sign-in-modal absolute flex items-center justify-center h-full w-full z-[10]"
+      >
+        <div
+          class="h-[78%] w-[27%] bg-card rounded-3xl flex flex-col items-center justify-center px-10 gap-2 py-6"
+        >
+          <div id="close" class="absolute cursor-pointer right-0 top-0 my-3 mx-3 bg-[#212121] rounded-full h-10 w-10 flex items-center justify-center text-white ">
+            <i class="ri-close-large-line text-xl"></i>
+          </div>
+          <div class="logo h-20 w-20">
+            <img
+              class="h-full w-full object-contain"
+              src="./assets/Sheryians_Logo.png"
+              alt=""
+            />
+          </div>
+          <h1 class="text-2xl mt-1 font-bold">Log in to your account</h1>
+          <p class="text-sm mb-4">Welcome back! Please enter your details.</p>
+          <label class="w-full text-left font-medium" for="">Email</label>
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            class="w-full border-none rounded-md mb-4"
+          />
+          <label class="w-full text-left font-medium" for="">Password</label>
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="w-full border-none rounded-md mb-2"
+          />
+          <button
+            type="submit"
+            class="bg-[#212121] text-white w-full rounded-xl p-3 mt-2"
+          >
+            Log in
+          </button>
+          <p class="w-full text-left">
+            Don't have an account!
+            <span class="cursor-pointer font-bold">Sign up</span>
+          </p>
+        </div>
+      </div>
+      <nav
+        class="w-full bg-transparent fixed top-0 z-[9] py-[0.5rem] px-[5vw] flex items-center justify-between"
+      >
+        <div class="left flex items-center justify-center gap-2">
+          <img
+            class="h-[2.5rem] w-[2.5rem] object-contain"
+            src="./assets/Sheryians_Logo.png"
+            alt=""
+          />
+          <div class="h-line h-[1.7rem] w-[1px] bg-[#35353559]"></div>
+          <p class="capitalize font-semibold w-[135px]">
+            Sheryians coding school
+          </p>
+        </div>
+        <div class="right flex relative">
+          <input
+            type="checkbox"
+            name="check-icon"
+            class="check-icon"
+            id="check-icon"
+          />
+          <label class="icon-menu z-50" for="check-icon">
+            <div class="bar bar-1"></div>
+            <div class="bar bar-2"></div>
+          </label>
+        </div>
+        <div
+          style="right: -50%"
+          class="absolute menu-anim z-40 px-[3vw] flex top-0 h-screen w-[45vw] gap-[8rem] pt-[11.5rem] bg-white"
+        >
+          <div class="socials flex flex-col gap-[1.6rem]">
+            <div class="title mb-[0.75rem] opacity-[0.6] text-[0.9em]">
+              Social
+            </div>
+            <a href="">youtube</a>
+            <a href="">instagram</a>
+            <a href="">discord</a>
+            <a href="">linkedIn</a>
+            <a href="">facebook</a>
+          </div>
+          <div class="menu flex flex-col gap-5">
+            <div class="title mb-[0.75rem] opacity-[0.6] text-[0.9em]">
+              Menu
+            </div>
+            <a class="text-[52px] leading-none cursor-pointer mt-1" href=""
+              >Home</a
+            >
+            <a class="text-[52px] leading-none cursor-pointer" href=""
+              >Courses</a
+            >
+            <a class="text-[52px] leading-none cursor-pointer">Sign-in</a>
+          </div>
+        </div>
+      </nav>
+      <div class="page h-full w-full pt-[12rem]">
+        <div
+          class="hero-text flex flex-col items-center font-medium w-full h-full"
+        >
+          <h1 class="uppercase text-9xl">✳︎ where dreams</h1>
+          <div class="flex items-center justify-between gap-5 px-[5%]">
+            <div class="text-[22px] tracking-tight font-normal ml-[-4.5%]">
+              <p class="text-center">We are committed to providing</p>
+              <p class="text-nowrap">
+                programs that go beyond top-tier training
+              </p>
+              <p>traditional education</p>
+            </div>
+            <h1 class="text-9xl uppercase mr-[6%]">transform</h1>
+          </div>
+          <h1 class="uppercase text-9xl">into code</h1>
+          <button
+            id="signInBtn"
+            class="text-right absolute right-0 bottom-0 mr-[5%] mb-[2%] bg-[#212121] text-white px-4 py-2 border-none rounded-md"
+          >
+            Sign in
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
